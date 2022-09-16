@@ -14,5 +14,15 @@
         <source media="(max-width:1050px )" srcset="imagem/foto-m.png" type="image/png"> 
          <img src="imagem/foto-g.png" alt="Imagem flexível" >
     </picture>
+    <h1>Reproduzindo Àudio</h1>
+    <p>Reproduzindo áudios em html5</p>
+    <audio src="midia/audio trovao.mp3" controls autoplay></audio> <!--MP3, WAV , OGG-->
+    <audio preload="metadata"  controls loop>
+        <source src="midia/audio trovao.mp3" type="audio/mpeg">
+        <source src="midia/audio trovao.wav" type="audio/wav">
+        <source src="midia/audio trovao.ogg" type="midia/ogg">
+        <p>Infelizmente o seu navegador não consegue reproduzir audio. <a href="midia/audio trovao.mp3">Clique aqui para baixar o arquivo</a></p>
+    </audio>
+
 </body>
 </html>
