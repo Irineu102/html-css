@@ -1,0 +1,32 @@
+@charset "UTF-8" ;
+
+#container {
+    background-image: url(../imagens/espaco.jpg);
+    background-size: 100% 100%;
+
+    position: relative; /*container sempre com posicionamento relativo*/
+    height: 95vh;
+    padding: 10px;
+
+
+}
+
+
+#conteudo {
+    background-image: url(..//imagens/astronauta.png);
+    background-size: 100% 100%;
+
+    position: absolute; /*conteudo sempre com posicionamento absoluto */
+    height: 200px;
+    width: 400px;
+    
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50% ,-50%);/*valores positivos movimenta para a direita e para baixo, valores negativo movimenta para a esquerda e para cima*/
+    
+    
+    /*configuração de posicionamento abosluto + configuração de left e top 50% cada, centraliza a imagem vertical e horizontalmente e usa o transform : translate , usando -50% , -50%*/
+
+}
