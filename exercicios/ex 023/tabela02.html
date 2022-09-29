@@ -21,6 +21,7 @@ caption {
 table { 
     width: 500px;
     border-collapse: collapse;
+    position: relative;
 }
 
 
@@ -30,8 +31,14 @@ td, th {
 }
 
 thead,tfoot {
-    background-color: gray;
+    background-color: rgb(39, 39, 39);
     color: white;
+}
+
+thead > tr > th {
+    position: sticky; /* efeitos para criar cabeçalho fixo*/
+    top: -1px;
+    background-color: rgb(39, 39, 39);
 }
 
 tbody > tr:nth-child(even) /*criando efeito zebrado*/{
